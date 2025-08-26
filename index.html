@@ -40,6 +40,7 @@
           <button
             id="botao-acessibilidade"
             class="btn btn-primary fw-bold rotacao-botao"
+            aria-expanded="false"
           >
             Acessibilidade
           </button>
@@ -47,11 +48,22 @@
             id="opcoes-acessibilidade"
             class="opcoes-acessibilidade apresenta-lista"
           >
-            <button id="aumentar-fonte" class="btn btn-primary fw-bold">
+            <button
+              id="aumentar-fonte"
+              class="btn btn-primary fw-bold"
+              aria-label="Aumentar o tamanho da fonte"
+            >
               A+
             </button>
-            <button id="diminuir-fonte" class="btn btn-primary fw-bold">
+            <button
+              id="diminuir-fonte"
+              class="btn btn-primary fw-bold"
+              aria-label="Diminuir o tamanho da fonte"
+            >
               A-
+            </button>
+            <button id="alternar-contraste" class="btn btn-primary fw-bold">
+              <i class="bi bi-shadows"></i>
             </button>
           </div>
         </div>
@@ -76,13 +88,14 @@
           <img
             src="img/hiphop/no_bg Racionais_Mc_s.png"
             class="img-fluid img-inicio"
+            id="img-cabecalho"
             alt="Cantor Mano Brown segurando um microfone enquanto se apresenta."
             title="Mano Brown | Circo Voador - RJ | Alex Carvalho from Rio de Janeiro, Brasil, CC BY-SA 2.0, via Wikimedia Commons"
           />
         </div>
       </section>
 
-      <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+      <section id="tropicalia" tabindex="0" class="my-5 pt-6 secao-tropicalia">
         <div class="container d-flex align-items-center">
           <div class="col-5">
             <h2>O que é o RAP?</h2>
@@ -97,7 +110,7 @@
         </div>
       </section>
 
-      <section id="galeria">
+      <section id="galeria" tabindex="0">
         <h2 class="text-center pt-5">Galeria</h2>
         <div class="container p-3 mt-3 fundo-galeria">
           <div class="row justify-content-md-center">
@@ -201,6 +214,7 @@
         fictício sem fins comerciais.
       </p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
