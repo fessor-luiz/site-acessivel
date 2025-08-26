@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>RAP</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="p-5">
+      <nav class="container d-flex justify-content-between align-items-center">
+        <img
+          src="img/logo.png"
+          alt="Logotipo da Tropicália"
+          class="nav-img"
+          loading="lazy"
+        />
+        <ul class="nav mt-5">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+        <div id="acessibildiade" class="menu-acessibilidade">
+          <button
+            id="botao-acessibilidade"
+            class="btn btn-primary fw-bold rotacao-botao"
+          >
+            Acessibilidade
+          </button>
+          <div
+            id="opcoes-acessibilidade"
+            class="opcoes-acessibilidade apresenta-lista"
+          >
+            <button id="aumentar-fonte" class="btn btn-primary fw-bold">
+              A+
+            </button>
+            <button id="diminuir-fonte" class="btn btn-primary fw-bold">
+              A-
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container my-5">
+      <section id="inicio" class="my-5">
+        <div
+          class="inicio-fundo d-flex justify-content-between align-items-center"
+        >
+          <div class="esquerda-conteudo">
+            <h1 class="display-2 text-white fst-italic fw-bold">
+              Ritmo e Poesia
+            </h1>
+            <a
+              href="#tropicalia"
+              class="btn btn-primary btn-lg botao-inicio fw-semibold"
+              >Quero conhecer!</a
+            >
+          </div>
+          <img
+            src="img/hiphop/no_bg Racionais_Mc_s.png"
+            class="img-fluid img-inicio"
+            alt="Cantor Mano Brown segurando um microfone enquanto se apresenta."
+            title="Mano Brown | Circo Voador - RJ | Alex Carvalho from Rio de Janeiro, Brasil, CC BY-SA 2.0, via Wikimedia Commons"
+          />
+        </div>
+      </section>
+
+      <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+        <div class="container d-flex align-items-center">
+          <div class="col-5">
+            <h2>O que é o RAP?</h2>
+            <p class="p-2">
+              O Rap [Ritmo e Poesia] foi um movimento musical e cultural
+              importante para a história das comunidades negras e periféricas do
+              Brasil. O estilo, que é uma vertente do Hip-Hop, foi importante
+              para expor as mazelas e problemas sociais vivênciados pela
+              população mais pobre e excluída da sociedade brasileira.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria">
+        <h2 class="text-center pt-5">Galeria</h2>
+        <div class="container p-3 mt-3 fundo-galeria">
+          <div class="row justify-content-md-center">
+            <div class="col-md-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Rael_da_Rima_%26_Emicida_no_Festival_Planeta_Brasil_-_8237250338.jpg"
+                class="img-fluid rounded-5"
+                loading="lazy"
+                alt="Rael da Rima e Emicida cantando lado a lado no festival Planeta Brasil"
+                title="Emicida e Rael da Rima no Festival Planeta Brasil | Fora do Eixo, CC BY-SA 2.0, via Wikimedia Commons"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Domingo_na_Casa_-95_Negra_Li_e_Rashid_SP_%2810669377776%29.jpg"
+                class="img-fluid rounded-5"
+                loading="lazy"
+                alt="Negra Li segurando o microfone enquanto se apresentava"
+                title="	Negra Li na 4ª edição da Temporada Especial de outubro e novembro do Domingo na Casa da Casa FdE SP | Fora do Eixo, CC BY-SA 2.0, via Wikimedia Commons"
+              />
+            </div>
+            <div class="col-md-4 mt-1">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/19/Racionais_Mc%C2%B4s_%283072526029%29.jpg"
+                class="img-fluid rounded-5"
+                loading="lazy"
+                alt="Mano Browm segurando o microfone enquanto se apresent"
+                title="Mano Brown | Circo Voador - RJ | Alex Carvalho from Rio de Janeiro, Brasil, CC BY-SA 2.0, via Wikimedia Commons"
+              />
+            </div>
+            <div class="col-md-4 mt-1">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/42/Emicida_Virada_Cultura-66_%2837335640826%29.jpg"
+                class="img-fluid rounded-5"
+                loading="lazy"
+                alt="Emicida e Coruja BC1 sob as luzes dos holofotes enquanto se apresentavam para a virada cultural de 2019"
+                title="Emicida e Coruja BC1 | Relicário, CC BY 2.0, via Wikimedia Commons"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="container p-5 d-flex justify-content-center">
+          <div class="col-md-8 col-lg-10 rounded-5 formulario">
+            <!-- Caixa do formulário com 60% de largura -->
+            <h2 class="mb-3">Entre em contato</h2>
+            <form>
+              <div class="form-group mb-3">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="form-control rounded-3 mt-1"
+                  placeholder="Digite seu nome completo"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control rounded-3 mt-1"
+                  placeholder="Digite seu email"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  class="form-control rounded-4 mt-2"
+                  rows="4"
+                  placeholder="Escreva sua mensagem"
+                ></textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg rounded-pill tamanho-botao"
+                >
+                  Enviar mensagem
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+      <p>Acesse nossas redes:</p>
+      <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-tiktok"></i>
+      <p class="mt-3">
+        Desenvolvido por
+        <a href="https://github.com/fessor-luiz">Professor Luiz</a>. Projeto
+        fictício sem fins comerciais.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
